@@ -27,10 +27,10 @@ Sigue estos pasos para configurar tu entorno de desarrollo en minutos.
    # El agente leerá las reglas en .agent/rules/ automáticamente.
    ```
 
-3. **Ejecutar Bootstrap Completo:**
-   Hemos preparado un comando para esto.
+3. **Ejecutar Setup Completo:**
+   Este comando realiza Bootstrap, Generación de Código y Validación (todo en uno).
    ```bash
-   melos bootstrap
+   melos run setup
    ```
 
 4. **Levantar Backend Local:**

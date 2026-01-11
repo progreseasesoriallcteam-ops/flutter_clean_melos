@@ -1,4 +1,4 @@
-name: flutter_clean_melos
+name: flutter_clean_melos_workspace
 
 packages:
   - apps/**
@@ -23,7 +23,15 @@ scripts:
     run: melos exec --depends-on=build_runner -- "dart run build_runner build --delete-conflicting-outputs"
     description: Run build_runner in all packages that depend on it.
 
-  # Command for Agents/CI to verify everything before push
+  # Script compuesto para configuración inicial (Funciona en Windows/Mac/Linux)
+  # Melos maneja el chaining de comandos (&&) internamente de forma cross-platform.
+  setup:
+    run: |
+      melos bootstrap && \
+      melos run build:runner && \
+      melos run validate
+    description: Configura todo el entorno: Bootstrap -> Build Runner -> Validate.
+
   validate:
     run: |
       melos run analyze && \
