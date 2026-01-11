@@ -4,7 +4,9 @@ Este proyecto es un monorepo Flutter gestionado con Melos.
 
 ## 🚀 Configuración Inicial
 
-**IMPORTANTE**: Antes de comenzar, por favor lee el archivo [setup-project-spec.md](./setup-project-spec.md) para entender la arquitectura y reglas del proyecto.
+**IMPORTANTE**: Antes de comenzar, por favor lee:
+1. [setup-project-spec.md](./setup-project-spec.md) - Arquitectura y Reglas del Proyecto.
+2. [AGENT_PROFILE.md](./AGENT_PROFILE.md) - Reglas de Identidad y Comportamiento del Agente.
 
 ### Pasos Rápidos
 1. `dart pub global activate melos`
