@@ -1,0 +1,47 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  plugins:
+    - dart_code_metrics
+
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    public_member_api_docs: false
+    lines_longer_than_80_chars: false # Enforced by formatter (120 chars)
+
+dart_code_metrics:
+  metrics:
+    cyclomatic-complexity: 20
+    lines-of-executable-code: 30
+    maximum-nesting-level: 5
+  metrics-exclude:
+    - test/**
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  rules:
+    - avoid-dynamic
+    - avoid-passing-async-when-sync-expected
+    - avoid-redundant-async
+    - avoid-unnecessary-type-assertions
+    - avoid-unrelated-type-assertions
+    - avoid-unused-parameters
+    - no-boolean-literal-compare
+    - no-empty-block
+    - no-equal-arguments
+    - no-equal-then-else
+    - prefer-trailing-comma
+    - prefer-conditional-expressions
+  anti-patterns:
+    - long-method:
+        severity: warning
+        threshold: 50 # Soft limit
+    - long-method:
+        severity: error
+        threshold: 100 # Alert limit
+    - long-parameter-list:
+        severity: warning
+        threshold: 4

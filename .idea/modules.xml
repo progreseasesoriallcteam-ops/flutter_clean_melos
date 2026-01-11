@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<module fileurl="file://$PROJECT_DIR$/melos_flutter_clean_melos_workspace.iml" filepath="$PROJECT_DIR$/melos_flutter_clean_melos_workspace.iml"/>
+<module fileurl="file://$PROJECT_DIR$/packages/api_client/melos_api_client.iml" filepath="$PROJECT_DIR$/packages/api_client/melos_api_client.iml"/>
+<module fileurl="file://$PROJECT_DIR$/apps/client/melos_client.iml" filepath="$PROJECT_DIR$/apps/client/melos_client.iml"/>
+<module fileurl="file://$PROJECT_DIR$/packages/core/melos_core.iml" filepath="$PROJECT_DIR$/packages/core/melos_core.iml"/>
+<module fileurl="file://$PROJECT_DIR$/packages/core_ui/melos_core_ui.iml" filepath="$PROJECT_DIR$/packages/core_ui/melos_core_ui.iml"/>
+<module fileurl="file://$PROJECT_DIR$/packages/database/melos_database.iml" filepath="$PROJECT_DIR$/packages/database/melos_database.iml"/>
+<module fileurl="file://$PROJECT_DIR$/apps/flutter_app/melos_flutter_app.iml" filepath="$PROJECT_DIR$/apps/flutter_app/melos_flutter_app.iml"/>
+<module fileurl="file://$PROJECT_DIR$/melos_flutter_clean_melos.iml" filepath="$PROJECT_DIR$/melos_flutter_clean_melos.iml"/>
+    </modules>
+  </component>
+</project>

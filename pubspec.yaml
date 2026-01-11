@@ -1,0 +1,16 @@
+name: flutter_clean_melos_workspace
+description: A new Flutter Web Clean Architecture workspace managed by Melos.
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dev_dependencies:
+  melos: ^7.0.0
+  very_good_analysis: ^10.0.0
+  dart_code_metrics: ^5.7.0
+
+dependency_overrides:
+  http: ^1.2.0
+  file: ^7.0.0
+  pub_updater: ^0.4.0

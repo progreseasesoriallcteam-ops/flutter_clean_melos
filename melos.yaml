@@ -1,0 +1,24 @@
+name: flutter_clean_melos
+
+packages:
+  - apps/*
+  - packages/*
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+    hooks:
+      post: dart pub get
+
+scripts:
+  analyze:
+    run: melos exec -- "dart analyze ."
+    description: Run analysis in all packages.
+
+  test:
+    run: melos exec --dir-exists=test -- "flutter test"
+    description: Run tests in all packages.
+
+  build:runner:
+    run: melos exec --depends-on=build_runner -- "dart run build_runner build --delete-conflicting-outputs"
+    description: Run build_runner in all packages that depend on it.
