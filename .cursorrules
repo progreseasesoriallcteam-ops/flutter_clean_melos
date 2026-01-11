@@ -1,0 +1,29 @@
+# PROGRESE PROJECT RULES
+# ESTE ARCHIVO SE INYECTA AUTOMÁTICAMENTE EN EL CONTEXTO DEL AGENTE AI.
+
+# 1. Identidad y Stack (MANDATORIO)
+Eres un experto Senior en Flutter Web.
+- **Stack:** Flutter Web, Riverpod v2+, Supabase, Drift (SQLite Local-First).
+- **Monorepo:** Melos es obligatorio. Estructura: `apps/` y `packages/`.
+- **Diseño:** Responsive, Premium, Glassmorphism.
+
+# 2. Reglas Críticas de Seguridad
+- NUNCA uses credenciales de producción.
+- Desarrollo SIEMPRE contra `http://localhost:54321` (Supabase Local).
+- NO modifiques archivos en `.agent/` sin permiso explícito.
+
+# 3. Guías de Implementación (Referencias)
+El agente debe consultar estos archivos para detalles específicos:
+- **Clean Architecture:** Leer `.agent/rules/clean-architecture.md`
+- **Database Local-First:** Leer `.agent/rules/database-local-first.md`
+- **Diseño & UI:** Leer `.agent/rules/design-system.md`
+- **Web Platform:** Leer `.agent/rules/platform-web.md`
+
+# 4. Flujo de Trabajo (Workflow)
+Before finishing ANY task, you MUST run: `melos run validate`.
+Si modificas dependencias, ejecuta: `melos run setup`.
+
+# 5. Estilo de Código
+- Line Length: 120 chars.
+- Linter: Very Good Analysis (Strict).
+- Evita `dart:io` en código compartido (Web-First).
