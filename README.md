@@ -78,12 +78,23 @@ El proyecto usa scripts de Melos centralizados en `melos.yaml`.
 
 ---
 
-## 🤝 Contribución
+## 🤝 Contribución y Flujo de Trabajo
 
+### Roles del Equipo
+- **Líder de Proyecto (@project-lead):** Dueño del repositorio. Revisa y aprueba todos los Pull Requests. Encargado de mantener la configuración crítica (Reglas, CI/CD).
+- **Desarrollador:** Implementa funcionalidades en ramas independientes.
+
+### Proceso de Aprobación (CODEOWNERS)
+Este repositorio tiene activada la protección de ramas mediante `CODEOWNERS`.
+1. **Pull Requests:** Todo cambio debe llegar vía PR a la rama `main`.
+2. **Revisión Obligatoria:** GitHub bloqueará el "Merge" hasta que el **Líder de Proyecto** apruebe los cambios.
+3. **Áreas Críticas:** Archivos como `melos.yaml`, `.agent/` y pipelines requieren atención especial durante la revisión.
+
+### Pasos para Contribuir
 1. Crea un branch (`feat/usuario-login`, `fix/error-database`).
 2. Sigue [Conventional Commits](https://www.conventionalcommits.org/).
-3. Asegúrate de que `melos run analyze` pase en verde.
-4. Abre un Pull Request.
+3. Asegúrate de que `melos run validate` pase en verde (Analisis + Tests).
+4. Abre un Pull Request y asigna al Líder como revisor.
 
 ---
 _Generado por Antigravity - 2026_
