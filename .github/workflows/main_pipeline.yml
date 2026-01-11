@@ -27,11 +27,8 @@ jobs:
       - name: Generate Code (Riverpod/Drift)
         run: melos run build:runner
 
-      - name: Analyze Code
-        run: melos run analyze
-
-      - name: Run Tests
-        run: melos run test
+      - name: Validate (Analyze + Test)
+        run: melos run validate
 
   supabase_validation:
     name: Supabase Migrations Check
