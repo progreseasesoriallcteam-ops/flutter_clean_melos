@@ -22,3 +22,10 @@ scripts:
   build:runner:
     run: melos exec --depends-on=build_runner -- "dart run build_runner build --delete-conflicting-outputs"
     description: Run build_runner in all packages that depend on it.
+
+  # Command for Agents/CI to verify everything before push
+  validate:
+    run: |
+      melos run analyze && \
+      melos run test
+    description: Run full validation suite (Analyzer + Tests). Agent MUST run this before finishing a task.
