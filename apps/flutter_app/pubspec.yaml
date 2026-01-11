@@ -9,6 +9,8 @@ environment:
 dependencies:
   api_client:
     path: ../../packages/api_client
+  core:
+    path: ../../packages/core
   core_ui:
     path: ../../packages/core_ui
   cupertino_icons: ^1.0.8

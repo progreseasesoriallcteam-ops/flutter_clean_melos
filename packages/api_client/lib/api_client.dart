@@ -1,5 +1,10 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:core/core.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+
+class ApiClient {
+  static Future<void> initialize(AppConfig config) async {
+    await Supabase.initialize(url: config.supabaseUrl, anonKey: config.supabaseAnonKey, debug: config.isDevelopment);
+  }
+
+  static SupabaseClient get client => Supabase.instance.client;
 }
