@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Flutter Web Guidelines
 
 Este proyecto está optimizado para **Web**. El agente debe seguir estas reglas adicionales:
@@ -17,6 +21,6 @@ Este proyecto está optimizado para **Web**. El agente debe seguir estas reglas 
 ## 🚀 Despliegue Web
 - El build de producción se genera con:
   ```bash
-  flutter build web --release --wasm
+  flutter build web --release
   ```
 - (Configura `--wasm` solo si el entorno lo soporta, sino usa html/canvas kit default).
