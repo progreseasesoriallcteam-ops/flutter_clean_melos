@@ -36,9 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
+  dart_code_metrics: ^5.7.0
   flutter_test:
     sdk: flutter
-  dart_code_metrics: ^5.7.0
   very_good_analysis: ^5.1.0
 
   # The "flutter_lints" package below contains a set of recommended lints to

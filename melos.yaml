@@ -1,8 +1,8 @@
 name: flutter_clean_melos
 
 packages:
-  - apps/*
-  - packages/*
+  - apps/**
+  - packages/**
 
 command:
   bootstrap:
