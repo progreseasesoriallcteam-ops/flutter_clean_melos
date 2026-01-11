@@ -1,11 +1,11 @@
 enum AppEnvironment { development, production }
 
 class AppConfig {
+  const AppConfig({required this.environment, required this.supabaseUrl, required this.supabaseAnonKey});
+
   final AppEnvironment environment;
   final String supabaseUrl;
   final String supabaseAnonKey;
-
-  const AppConfig({required this.environment, required this.supabaseUrl, required this.supabaseAnonKey});
 
   static const development = AppConfig(
     environment: AppEnvironment.development,
