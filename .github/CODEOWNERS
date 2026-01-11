@@ -1,0 +1,20 @@
+# CODEOWNERS for Progrese
+# Este archivo define quién es responsable de qué partes del código.
+# GitHub requerirá aprobación de estas personas si se tocan estos archivos.
+
+# Por defecto, el equipo de core mantiene todo
+* @equipo-core
+
+# Reglas del Agente y Configuración Crítica
+# Protege estos archivos para evitar que un agente los reescriba sin supervisión humana senior.
+.agent/ @tech-lead
+AGENT_PROFILE.md @tech-lead
+setup-project-spec.md @tech-lead
+analysis_options.yaml @tech-lead
+
+# Configuración de Pipeline
+.github/workflows/ @devops-lead
+
+# Diseño
+.agent/rules/design-system.md @design-lead
+packages/core_ui/ @design-lead
