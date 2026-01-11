@@ -1,7 +1,7 @@
 # Especificación Maestra: Configuración de Proyecto Flutter 2026
 
 ## 1. Objetivo
-Inicializar un entorno de desarrollo profesional bajo el modelo "Local-First" y "Producción Protegida".
+Inicializar un entorno de desarrollo profesional para **Flutter Web** bajo el modelo "Local-First" y "Producción Protegida".
 Este documento es la **fuente de verdad** para la configuración del proyecto.
 
 ## 2. Estructura del Monorepo (Melos)

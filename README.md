@@ -1,7 +1,7 @@
-# Progrese - Flutter Clean Melos Workspace
+# Progrese - Flutter Web Clean Melos Workspace
 
 Bienvenido al repositorio oficial del proyecto **Progrese**.
-Este proyecto utiliza una arquitectura **Clean Architecture + Monorepo (Melos)** enfocada en **Local-First**.
+Este proyecto utiliza una arquitectura **Clean Architecture + Monorepo (Melos)** enfocada en **Flutter Web** y estrategia **Local-First**.
 
 ## 🚀 Inicio Rápido
 
