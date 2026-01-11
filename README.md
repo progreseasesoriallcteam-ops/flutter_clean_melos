@@ -1,24 +1,88 @@
-# Flutter Clean Melos Workspace
+# Progrese - Flutter Clean Melos Workspace
 
-Este proyecto es un monorepo Flutter gestionado con Melos.
+Bienvenido al repositorio oficial del proyecto **Progrese**.
+Este proyecto utiliza una arquitectura **Clean Architecture + Monorepo (Melos)** enfocada en **Local-First**.
 
-## 🚀 Configuración Inicial
+## 🚀 Inicio Rápido
 
-**IMPORTANTE**: Antes de comenzar, por favor lee:
-1. [setup-project-spec.md](./setup-project-spec.md) - Arquitectura y Reglas del Proyecto.
-2. [AGENT_PROFILE.md](./AGENT_PROFILE.md) - Reglas de Identidad y Comportamiento del Agente.
+Sigue estos pasos para configurar tu entorno de desarrollo en minutos.
 
-### Pasos Rápidos
-1. `dart pub global activate melos`
-2. `melos bootstrap`
-3. `melos run build:runner`
-4. `supabase start`
+### Prerrequisitos
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) (Stable)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [Supabase CLI](https://supabase.com/docs/guides/cli)
+- [Melos](https://melos.invertase.io/)
 
-## Estructura
-- **apps/**: Aplicaciones finales.
-- **packages/**: Librerías compartidas (`core_ui`, `database`, `api_client`).
+### Instalación
 
-## Comandos Útiles
-- `melos run analyze`: Analizar código.
-- `melos run test`: Correr pruebas.
-- `melos run build:runner`: Generar código (Riverpod/Drift).
+1. **Clonar el repositorio y entrar en el directorio:**
+   ```bash
+   git clone <URL_DEL_REPO>
+   cd flutter_clean_melos
+   ```
+
+2. **Configurar el Agente (Opcional):**
+   Si usas Antigravity o un agente similar, ejecuta el workflow de setup:
+   ```bash
+   # El agente leerá las reglas en .agent/rules/ automáticamente.
+   ```
+
+3. **Ejecutar Bootstrap Completo:**
+   Hemos preparado un comando para esto.
+   ```bash
+   melos bootstrap
+   ```
+
+4. **Levantar Backend Local:**
+   ```bash
+   supabase start
+   ```
+
+5. **Generar Código (Freezed, Riverpod, Drift):**
+   ```bash
+   melos run build:runner
+   ```
+
+---
+
+## 🏗 Arquitectura y Reglas
+
+El proyecto sigue reglas estrictas para garantizar escalabilidad y calidad.
+
+### 📚 Documentación Clave
+Todo desarrollador **debe leer** estos documentos antes de contribuir:
+
+- **[Reglas Generales (AGENT_PROFILE.md)](./AGENT_PROFILE.md)**: Identidad, stack y seguridad.
+- **[Especificación del Proyecto (setup-project-spec.md)](./setup-project-spec.md)**: Detalles técnicos profundos.
+
+### 📏 Reglas Específicas (.agent/rules)
+Estas reglas guían al agente AI y a los desarrolladores:
+
+| Regla | Descripción |
+|-------|-------------|
+| [Clean Architecture](./.agent/rules/clean-architecture.md) | Estructura de capas, Riverpod y separación de responsabilidades. |
+| [Database Strategy](./.agent/rules/database-local-first.md) | Enfoque Local-First con Drift y sincronización Supabase. |
+| [CI/CD & Git](./.agent/rules/ci-cd-guidelines.md) | Flujo de Github Actions, Conventional Commits y despliegues. |
+
+---
+
+## 🛠 Comandos Melos (Cheat Sheet)
+
+El proyecto usa scripts de Melos centralizados en `melos.yaml`.
+
+- `melos run analyze`: Ejecuta el linter en todos los paquetes.
+- `melos run test`: Corre todos los tests unitarios y de widgets.
+- `melos run build:runner`: Regenera todo el código autogenerado.
+- `melos exec -- "flutter clean"`: Limpia todos los paquetes.
+
+---
+
+## 🤝 Contribución
+
+1. Crea un branch (`feat/usuario-login`, `fix/error-database`).
+2. Sigue [Conventional Commits](https://www.conventionalcommits.org/).
+3. Asegúrate de que `melos run analyze` pase en verde.
+4. Abre un Pull Request.
+
+---
+_Generado por Antigravity - 2026_
