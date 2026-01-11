@@ -1,20 +1,24 @@
 # CODEOWNERS for Progrese
-# Este archivo define quién es responsable de qué partes del código.
-# GitHub requerirá aprobación de estas personas si se tocan estos archivos.
+# Define los dueños del código para revisión obligatoria en Pull Requests.
+# IMPORTANTE: Reemplaza @project-lead con el nombre de usuario real de GitHub del Líder.
 
-# Por defecto, el equipo de core mantiene todo
-* @equipo-core
+# El Líder de Proyecto supervisa TODO el repositorio por defecto.
+# Cualquier cambio requiere su aprobación.
+* @project-lead
 
-# Reglas del Agente y Configuración Crítica
-# Protege estos archivos para evitar que un agente los reescriba sin supervisión humana senior.
-.agent/ @tech-lead
-AGENT_PROFILE.md @tech-lead
-setup-project-spec.md @tech-lead
-analysis_options.yaml @tech-lead
+# ------------------------------------------------------------------
+# Áreas Críticas de Configuración (Protección de Infraestructura)
+# ------------------------------------------------------------------
 
-# Configuración de Pipeline
-.github/workflows/ @devops-lead
+# Identidad y Reglas del Agente
+.agent/ @project-lead
+AGENT_PROFILE.md @project-lead
+setup-project-spec.md @project-lead
 
-# Diseño
-.agent/rules/design-system.md @design-lead
-packages/core_ui/ @design-lead
+# Configuración de Monorepo y Calidad
+melos.yaml @project-lead
+analysis_options.yaml @project-lead
+pubspec.yaml @project-lead
+
+# CI/CD y GitHub
+.github/ @project-lead
