@@ -21,7 +21,11 @@ Sigue estos pasos para configurar tu entorno de desarrollo en minutos.
    cd flutter_clean_melos
    ```
 
-
+2. **Configurar el Agente (Opcional):**
+   Si usas Antigravity o un agente similar, ejecuta el workflow de setup:
+   ```bash
+   # El agente leerá las reglas en .agent/rules/ automáticamente.
+   ```
 
 3. **Ejecutar Setup Completo:**
    Este comando instala dependencias, configura Melos, genera código y valida el entorno en un solo paso.
