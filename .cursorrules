@@ -27,3 +27,8 @@ Si modificas dependencias, ejecuta: `melos run setup`.
 - Line Length: 120 chars.
 - Linter: Very Good Analysis (Strict).
 - Evita `dart:io` en código compartido (Web-First).
+- **Documentación Effective Dart (OBLIGATORIO):**
+  - Usa `///` para miembros públicos.
+  - Comienza con resumen de una oración terminando en punto.
+  - Usa `[parametro]` para referencias.
+  - Enfócate en el **POR QUÉ**, no en lo obvio.

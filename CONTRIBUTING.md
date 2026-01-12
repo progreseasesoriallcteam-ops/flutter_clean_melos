@@ -17,6 +17,14 @@ Cada vez que inicies una tarea en este repositorio, **DEBES** seguir este protoc
     *   Jamás expongas secretos.
     *   Usa solo `localhost` para backend.
 
+## 📝 Documentación y Comentarios (OBLIGATORIO)
+
+Cada vez que escribas o modifiques código, **DEBES** seguir el estándar **Effective Dart**:
+1.  Usa `///` para doc comments en clases y métodos públicos.
+2.  La primera línea debe ser un resumen de una oración que termine en punto.
+3.  Usa corchetes `[nombre]` para referenciar parámetros, variables o tipos.
+4.  **No expliques lo obvio**. Enfócate en el **por qué** de la lógica o bordes de casos complejos.
+
 ## 🛠 Comandos Obligatorios
 
 *   **Al iniciar:** Si faltan dependencias, corre `melos run setup`.
