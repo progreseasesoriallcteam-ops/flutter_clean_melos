@@ -2,6 +2,7 @@
 
 ## Perfil de Desarrollo
 - **Stack Preferido:** Flutter, Dart, Supabase, SQLite (Drift).
+- **Navegación:** Prioridad **GoRouter** (Deeplinking/Web). Usar **flow_builder** para flujos complejos.
 - **Arquitectura:** Clean Architecture con enfoque Local-First.
 - **Gestión de Monorepo:** Melos es obligatorio para la gestión de paquetes.
 

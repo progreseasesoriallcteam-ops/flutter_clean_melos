@@ -18,6 +18,10 @@ Cada paquete sigue **Clean Architecture**:
 - `infrastructure/`: Repositorios y fuentes de datos.
 - `presentation/`: Providers de Riverpod y Widgets.
 
+### Navegación
+- **Router Principal**: `GoRouter` para manejo de rutas estándar y Deep Links.
+- **Flujos de Estado**: `flow_builder` para wizards o flujos complejos anidados.
+
 ## 3. Configuración de Backend (Supabase Local)
 **REGLA CRÍTICA**: El desarrollo es estrictamente LOCAL.
 - **URL**: `http://127.0.0.1:54321` (O `10.0.2.2` para emulador Android).
