@@ -15,7 +15,9 @@ Cada vez que inicies una tarea en este repositorio, **DEBES** seguir este protoc
     *   Web / Respnsive -> `platform-web.md`
 3.  **Seguridad**:
     *   Jamás expongas secretos.
+    *   Jamás expongas secretos.
     *   Usa solo `localhost` para backend.
+    *   **Inmutabilidad**: NO tienes permiso para modificar `CONTRIBUTING.md`, `.cursorrules`, análisis estático o reglas en `.agent/` a menos que la tarea sea explícitamente "Actualizar Reglas".
 
 ## 📝 Documentación y Comentarios (OBLIGATORIO)
 

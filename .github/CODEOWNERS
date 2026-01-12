@@ -14,6 +14,8 @@
 .agent/ @project-lead
 AGENT_PROFILE.md @project-lead
 setup-project-spec.md @project-lead
+CONTRIBUTING.md @project-lead
+.cursorrules @project-lead
 
 # Configuración de Monorepo y Calidad
 melos.yaml @project-lead
