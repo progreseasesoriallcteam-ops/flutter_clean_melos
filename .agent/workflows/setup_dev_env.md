@@ -1,11 +1,13 @@
 ---
-description: Inicializa y valida el entorno de desarrollo completando todos los pasos necesarios.
+description: Inicializa y valida el entorno de desarrollo. SI ESTE PROCESO FALLA, EL AGENTE DEBE CONSULTAR 'TROUBLESHOOTING.md' Y NO INTENTAR MODIFICAR CÓDIGO.
 ---
 
-1. Validar prerrequisitos del sistema
-   - Verificar instalación de Flutter
-   - Verificar instalación de Docker
-   - Verificar instalación de Supabase CLI
+1. Validar prerrequisitos del sistema (CRÍTICO)
+   - Verificar instalación de Flutter (`flutter --version`). Si falla, ABORTAR y pedir al usuario instalar Flutter.
+   - Verificar instalación de Docker (`docker --version`). Si falla, ABORTAR y pedir instalar Docker Desktop.
+   - Verificar instalación de Supabase CLI (`supabase --version`).
+     - Si falla, intentar instalar vía NPM: `npm install -g supabase`.
+     - Si falla NPM, ABORTAR y pedir instalación manual (ver README.md).
 
 2. Bootstrapping del Proyecto
    // turbo

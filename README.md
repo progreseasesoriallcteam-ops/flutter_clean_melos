@@ -7,11 +7,39 @@ Este proyecto utiliza una arquitectura **Clean Architecture + Monorepo (Melos)**
 
 Sigue estos pasos para configurar tu entorno de desarrollo en minutos.
 
-### Prerrequisitos
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (Stable)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- [Supabase CLI](https://supabase.com/docs/guides/cli)
-- [Melos](https://melos.invertase.io/)
+### Prerrequisitos (Instalación Manual Requerida)
+
+Debido a la naturaleza de estas herramientas, debes instalarlas manualmente antes de que el Agente pueda trabajar:
+
+1.  **[Git](https://git-scm.com/downloads)**
+    *   Requerido para el control de versiones.
+    *   *Windows*: Instalar "Git for Windows".
+
+2.  **[Flutter SDK](https://docs.flutter.dev/get-started/install)** (Stable Channel)
+    *   Descargar y extraer el zip.
+    *   Agregar la carpeta `flutter/bin` a tus variables de entorno (PATH).
+    *   Verificar con: `flutter doctor`.
+
+3.  **[Docker Desktop](https://www.docker.com/products/docker-desktop)**
+    *   **Crítico**: Supabase Local corre sobre Docker.
+    *   Instalar y asegurarse de que el engine esté corriendo (Icono de ballena en la barra de tareas).
+
+4.  **[Supabase CLI](https://supabase.com/docs/guides/cli)**
+    *   Herramienta de línea de comandos para gestionar el backend local.
+    *   *Windows (vía Scoop)*:
+        ```powershell
+        scoop bucket add supabase https://github.com/supabase/scoop-bucket.git
+        scoop install supabase
+        ```
+    *   *Alternativa (NPM)*: `npm install -g supabase`
+    *   *Alternativa (Manual)*: Descargar el ejecutable de [GitHub Releases](https://github.com/supabase/cli/releases), renombrar a `supabase.exe` y agregar al PATH.
+
+5.  **[Melos](https://melos.invertase.io/)**
+    *   Gestor del Monorepo.
+    *   Instalable vía Dart (paso automatizable si Dart/Flutter ya están):
+        ```bash
+        dart pub global activate melos
+        ```
 
 ### Instalación
 
