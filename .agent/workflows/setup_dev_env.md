@@ -28,5 +28,6 @@ description: Inicializa y valida el entorno de desarrollo. SI ESTE PROCESO FALLA
    // turbo
    - Ejecutar `melos run test` para validar el estado base del proyecto.
 
-6. Confirmación
-   - Mostrar mensaje: "Entorno listo. Puedes comenzar a editar en apps/flutter_app o packages/."
+6. Confirmación y Ejecución
+   - Ejecutar `cd apps/flutter_app && flutter run -d chrome`
+   - Verificar que aparezca en pantalla: "Entorno Totalmente Instalado"

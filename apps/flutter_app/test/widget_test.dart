@@ -17,7 +17,7 @@ void main() {
     await tester.pumpAndSettle(); // Wait for navigation
 
     // Verify that our clean message is present.
-    expect(find.text('Progrese App (GoRouter Configured)'), findsOneWidget);
+    expect(find.text('Entorno Totalmente Instalado'), findsOneWidget);
 
     // Verify no legacy counter elements exist
     expect(find.byIcon(Icons.add), findsNothing);
