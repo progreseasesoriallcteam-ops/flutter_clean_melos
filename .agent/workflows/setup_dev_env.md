@@ -5,9 +5,8 @@ description: Inicializa y valida el entorno de desarrollo. SI ESTE PROCESO FALLA
 1. Validar prerrequisitos del sistema (CRÍTICO)
    - Verificar instalación de Flutter (`flutter --version`). Si falla, ABORTAR y pedir al usuario instalar Flutter.
    - Verificar instalación de Docker (`docker --version`). Si falla, ABORTAR y pedir instalar Docker Desktop.
-   - Verificar instalación de Supabase CLI (`supabase --version`).
-     - Si falla, intentar instalar vía NPM: `npm install -g supabase`.
-     - Si falla NPM, ABORTAR y pedir instalación manual (ver README.md).
+   - Verificar instalación de Supabase CLI (`supabase --version` o `npx supabase --version`).
+     - Si ambos fallan, ABORTAR y pedir instalación manual (ver README.md).
 
 2. Bootstrapping del Proyecto
    // turbo
@@ -17,7 +16,7 @@ description: Inicializa y valida el entorno de desarrollo. SI ESTE PROCESO FALLA
 
 3. Configuración de Backend (Local)
    // turbo
-   - Ejecutar `supabase start` para asegurar que el backend local esté corriendo.
+   - Ejecutar `supabase start` (o `npx supabase start` si es local via NPM) para asegurar que el backend local esté corriendo.
 
 4. Generación de Código
    // turbo
