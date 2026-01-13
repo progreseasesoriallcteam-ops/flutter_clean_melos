@@ -1,8 +1,11 @@
 name: flutter_clean_melos_workspace
 
 packages:
-  - apps/**
-  - packages/**
+  - apps/flutter_app
+  - packages/api_client
+  - packages/core
+  - packages/core_ui
+  - packages/database
 
 command:
   bootstrap:
