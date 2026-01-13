@@ -1,26 +1,14 @@
-# CODEOWNERS for Progrese
-# Define los dueños del código para revisión obligatoria en Pull Requests.
-# IMPORTANTE: Reemplaza @project-lead con el nombre de usuario real de GitHub del Líder.
+# Líder de Proyecto (Dueño del Repositorio)
+# Reemplaza @TechLead con el nombre de usuario de GitHub real del líder.
+*       @TechLead
 
-# El Líder de Proyecto supervisa TODO el repositorio por defecto.
-# Cualquier cambio requiere su aprobación.
-* @project-lead
+# 🔒 Seguridad del Agente y Reglas
+# El Tech Lead es el ÚNICO que puede aprobar cambios en cómo piensa la IA.
+.agent/             @TechLead
+.agent/rules/       @TechLead
 
-# ------------------------------------------------------------------
-# Áreas Críticas de Configuración (Protección de Infraestructura)
-# ------------------------------------------------------------------
-
-# Identidad y Reglas del Agente
-.agent/ @project-lead
-AGENT_PROFILE.md @project-lead
-setup-project-spec.md @project-lead
-CONTRIBUTING.md @project-lead
-.cursorrules @project-lead
-
-# Configuración de Monorepo y Calidad
-melos.yaml @project-lead
-analysis_options.yaml @project-lead
-pubspec.yaml @project-lead
-
-# CI/CD y GitHub
-.github/ @project-lead
+# 🔓 Excepción: Sistema de Diseño
+# El archivo de diseño es colaborativo; cualquier desarrollador puede proponer cambios
+# (Aunque sigue requiriendo la aprobación final del TechLead por la regla global "*").
+# Pero explícitamente podríamos asignar a un diseñador aquí si quisiéramos.
+# .agent/rules/design-system.md  @UI_Designer_O_Equipo

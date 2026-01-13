@@ -60,6 +60,7 @@ Debido a la naturaleza de estas herramientas, debes instalarlas manualmente ante
    ```bash
    melos run setup
    ```
+   > 🆘 ¿Falló el setup? Consulta la **[Guía de Solución de Problemas (TROUBLESHOOTING.md)](./TROUBLESHOOTING.md)** antes de continuar.
 
 4. **Levantar Backend Local:**
    ```bash
