@@ -30,7 +30,10 @@ Cada vez que escribas o modifiques código, **DEBES** seguir el estándar **Effe
 ## 🛠 Comandos Obligatorios
 
 *   **Al iniciar:** Si faltan dependencias, corre `melos run setup`.
-*   **Al finalizar:** NUNCA entregues una tarea sin antes correr `melos run validate` y corregir todos los errores.
+*   **Antes de enviar PR:**
+    1. Ejecuta `melos run validate` (Linter + Tests).
+    2. **Solo 1 vez (Inicialización):** Verifica si Firebase está configurado para CD (`.agent/workflows/setup_firebase_deploy.md`).
+*   **Al finalizar:** NUNCA entregues una tarea sin corregir todos los errores.
 
 ## 📂 Estructura del Proyecto
 

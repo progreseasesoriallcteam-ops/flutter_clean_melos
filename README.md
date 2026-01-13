@@ -88,6 +88,7 @@ Estas reglas guían al agente AI y a los desarrolladores:
 | [Database Strategy](./.agent/rules/database-local-first.md) | Enfoque Local-First con Drift y sincronización Supabase. |
 | [Design System](./.agent/rules/design-system.md) | **Guía de Estilo**: Colores, Tipografía y Componentes Globales que el Agente debe usar. |
 | [CI/CD & Git](./.agent/rules/ci-cd-guidelines.md) | Flujo de Github Actions, Conventional Commits y despliegues. |
+| [Firebase Setup](./.agent/workflows/setup_firebase_deploy.md) | Guía de configuración para despliegue automático. |
 
 ---
 

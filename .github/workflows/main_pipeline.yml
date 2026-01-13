@@ -42,3 +42,34 @@ jobs:
         
       - name: Verify Migrations
         run: supabase db push --dry-run
+        
+  deploy_web:
+    name: Deploy to Firebase Hosting
+    needs: [flutter_checks, supabase_validation]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          
+      - name: Install dependencies
+        run: |
+          dart pub global activate melos
+          melos bootstrap
+          
+      - name: Build Web
+        run: |
+          cd apps/flutter_app
+          flutter build web --release --no-tree-shake-icons
+          
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          channelId: live
+          projectId: progrese-prod # REEMPLAZAMEEE: ID de tu proyecto Firebase real
