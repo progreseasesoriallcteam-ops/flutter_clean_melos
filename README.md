@@ -122,4 +122,4 @@ Este repositorio tiene activada la protección de ramas mediante `CODEOWNERS`.
 4. Abre un Pull Request y asigna al Líder como revisor.
 
 ---
-_Generado por Antigravity - 2026_
+_Generado por Carlos con Antigravity - 2026_
