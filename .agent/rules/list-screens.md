@@ -23,7 +23,7 @@ AppListPage<T>({
   VoidCallback? onLoadMore,
   bool isLoadingMore = false,
   bool hasMore = false,
-  bool Function(T)? onItemTap,
+  void Function(T)? onItemTap,
   String? emptyMessage,
 })
 ```
@@ -92,7 +92,7 @@ class UserListScreen extends ConsumerWidget {
       searchHint: strings.searchUsersHint,
       items: state.asData?.value ?? [],
       itemBuilder: (ctx, user, i) => _buildTile(ctx, user),
-      onItemTap: isAdmin ? (user) { _openForm(ctx, user); return true; } : null,
+      onItemTap: isAdmin ? (user) { _openForm(ctx, user); } : null,
       onAdd: isAdmin ? () => _openForm(ctx, null) : null,
       addLabel: strings.addUser,
       filters: [

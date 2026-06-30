@@ -25,12 +25,11 @@ class UserListScreen extends ConsumerWidget {
       itemBuilder: (context, user, index) =>
           _buildUserTile(context, user, strings, isAdmin, notifier),
       onItemTap: isAdmin
-          ? (user) {
-              _openForm(context, user);
-              return true;
-            }
+          ? (user) => WidgetsBinding.instance.addPostFrameCallback((_) => _openForm(context, user))
           : null,
-      onAdd: isAdmin ? () => _openForm(context, null) : null,
+      onAdd: isAdmin
+          ? () => WidgetsBinding.instance.addPostFrameCallback((_) => _openForm(context, null))
+          : null,
       addLabel: strings.addUser,
       filters: [
         AppFilter(value: UserRole.admin, label: strings.adminLabel),

@@ -37,7 +37,7 @@ class AppListPage<T> extends StatefulWidget {
   final VoidCallback? onLoadMore;
   final bool isLoadingMore;
   final bool hasMore;
-  final bool Function(T)? onItemTap;
+  final void Function(T)? onItemTap;
   final String? emptyMessage;
 
   @override
@@ -270,7 +270,7 @@ class _AppListPageState<T> extends State<AppListPage<T>> {
           }
           final item = widget.items[index];
           final body = widget.itemBuilder(context, item, index);
-          if (widget.onItemTap != null && widget.onItemTap!(item)) {
+          if (widget.onItemTap != null) {
             return Card(
               margin: const EdgeInsets.only(bottom: 8),
               elevation: 0,
