@@ -1,4 +1,4 @@
-enum AppEnvironment { development, production }
+import 'package:core/src/enums/app_environment.dart';
 
 class AppConfig {
   const AppConfig({required this.environment, required this.supabaseUrl, required this.supabaseAnonKey});
@@ -10,11 +10,9 @@ class AppConfig {
   static const development = AppConfig(
     environment: AppEnvironment.development,
     supabaseUrl: 'http://127.0.0.1:54321',
-    supabaseAnonKey: 'local-dummy-key-for-development',
+    supabaseAnonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0',
   );
 
-  // Production config should be injected or loaded securely.
-  // For now we assume a placeholder or build-time replacement.
   static const production = AppConfig(
     environment: AppEnvironment.production,
     supabaseUrl: String.fromEnvironment('SUPABASE_URL'),
